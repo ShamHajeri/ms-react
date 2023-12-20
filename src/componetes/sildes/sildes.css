@@ -1,0 +1,33 @@
+.sildes {
+    width: 90%;
+    height: 30rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    align-items: center;
+
+}
+
+.sildeImg {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sildeImg:hover{
+    transform: rotate(45deg);
+    transition-duration: 500ms;
+}
+
+.sildeText {
+    width: 90%;
+    height: 10rem;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}

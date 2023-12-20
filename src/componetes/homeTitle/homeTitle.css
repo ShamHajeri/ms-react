@@ -1,0 +1,44 @@
+.homeTitle{
+    width: 100%;
+    height: 40rem;
+    display:flex;
+    background-image: url(../../assert/moon.png);
+    background-position: 15% 45%;
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    transition-duration: 500ms;
+
+    
+}
+.homeTitle:hover{
+    background-size: 40rem;
+    background-position: 65% 15% ;
+
+}
+.mainTitle{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.mainHeading{
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 500;
+    
+
+}
+.subHeading{
+    font-size: 1.5rem;
+    color: white;
+    
+
+}
+.mainBtn{
+    margin: auto;
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    
+
+}
