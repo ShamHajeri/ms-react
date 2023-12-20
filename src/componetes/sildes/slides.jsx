@@ -9,7 +9,7 @@ const Sildes = (Props) => {
     return (<>
         <div class='sildes'>
             <div class='sildeElement'>
-                <img class='sildeImg' src={aa} />
+                <img alt='' class='sildeImg' src={aa} />
             </div>
             <div class='sildeElement'>
                 <span class='sildeText'>
