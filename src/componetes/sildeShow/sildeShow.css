@@ -1,0 +1,12 @@
+.arrowBtn{
+    font-size: 2rem;
+    color: white;
+    margin: auto;
+}
+.sildeShow{
+    width: 80%;
+    height: auto;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 10% 80% 10%;
+}
