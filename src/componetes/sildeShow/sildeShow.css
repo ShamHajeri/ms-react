@@ -1,3 +1,10 @@
+.mainSildes{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-rows:90% 10%;
+}
 .arrowBtn{
     width: 1rem;
     height: auto;

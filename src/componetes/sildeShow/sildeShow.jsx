@@ -20,10 +20,12 @@ const SildeShow = () => {
     }
 
     return (
-        <div class='sildeShow'>
-            <span class='arrowBtn' onClick={arrowPervious}>&lt;</span>
-            <Sildes text={sildesData[current].text} image={sildesData[current].url} />
-            <span class='arrowBtn' onClick={arrowNext}>&gt;</span>
+        <div class='mainSildes'>
+            <div class='sildeShow'>
+                <span class='arrowBtn' onClick={arrowPervious}>&lt;</span>
+                <Sildes text={sildesData[current].text} image={sildesData[current].url} />
+                <span class='arrowBtn' onClick={arrowNext}>&gt;</span>
+            </div>
         </div>
     )
 }
