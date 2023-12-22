@@ -8,7 +8,7 @@ const NavBar = (props) => {
     return (
         <div class="navBar">
             <div>
-                <div className="navLogo">Home</div>
+                <div className="navLogo">logo</div>
             </div>
             <div className='navElements'>
                 {navList}

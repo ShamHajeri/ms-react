@@ -1,9 +1,16 @@
 import './eventPage.css';
 import NavBar from '../../navBar/navBar';
 import Footer from '../../footer/footer';
+import Data from '../../../assert/data/Data.ts';
 
 const EventPage = () => {
-    return (<>
+    const data =Data.EventPage
+    console.log(data);
+
+    const TLHTML=  data.Event.map((item)=><><div class="TLName"><span>{item.Name}</span></div></>);  
+
+    return (
+    <>
         <NavBar></NavBar>
         <div class='event'>
             <div class="eventDiv">
@@ -14,26 +21,7 @@ const EventPage = () => {
                 </div>
             </div>
             <div class="timeLine">
-                <div class="TLName">
-                    <span>event1</span>
-                </div>
-                <div class="TLName">
-                    <span>event1</span>
-
-                </div>
-                <div class="TLName">
-                    <span>event1</span>
-
-                </div>
-                <div class="TLName">
-                    <span>event1</span>
-
-                </div>
-                <div class="TLName">
-                    <span>event1</span>
-
-                </div>
-
+                {TLHTML}
             </div>
         </div>
         <Footer></Footer>
