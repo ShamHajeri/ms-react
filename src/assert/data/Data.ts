@@ -1,8 +1,8 @@
 const HomeTitle ={
-    defualtBIPosition:'15% 45%',
-    nextBIPosition: '65% 15%',
-    defualtBISize:'4rem',
-    nextBISize:'40rem',
+    defualtBIPosition:'65% 15%',
+    nextBIPosition: ' 15% 65%',
+    defualtBISize:'40rem',
+    nextBISize:'4rem',
     mainHeading:'LEARN ABOUT THE MOON',
     subHeading:'EARTH NATURAL SATELLITE',
     mainBtn:'Explore More'

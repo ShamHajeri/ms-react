@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import './homeTitle.css'
 
-
-
 const HomeTitle = (props) => {
 
     const data = props.HomeTitleData;
@@ -16,12 +14,11 @@ const HomeTitle = (props) => {
     }, [])
     const listenToScroll = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        if (winScroll > 100) {
+        if (winScroll > 150) {
             setBIPosition(data.nextBIPosition)
             setBISize(data.nextBISize)
         }
     };
-
 
     return (
         <>
