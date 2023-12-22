@@ -6,8 +6,8 @@ import EventPage from './componetes/pages/eventPage/eventPage';
 function App() {
   return (
     <>
-      {/* <HomePages></HomePages> */}
-      <EventPage></EventPage>
+      <HomePages></HomePages>
+      {/* <EventPage></EventPage> */}
     </>
   );
 }

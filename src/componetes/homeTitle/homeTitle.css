@@ -3,18 +3,10 @@
     height: 40rem;
     display:flex;
     background-image: url(../../assert/moon.png);
-    background-position: 15% 45%;
-    background-size: 4rem;
     background-repeat: no-repeat;
     transition-duration: 500ms;
-
-    
 }
-.homeTitle:hover{
-    background-size: 40rem;
-    background-position: 65% 15% ;
 
-}
 .mainTitle{
     width: fit-content;
     margin: auto;
@@ -39,6 +31,7 @@
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     border: none;
+    cursor: pointer;
     
 
 }
