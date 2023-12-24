@@ -2,7 +2,7 @@ import './eventPage.css';
 import NavBar from '../../navBar/navBar';
 import Footer from '../../footer/footer';
 import Data from '../../../assert/data/Data.ts';
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 
 const EventPage = () => {
     const data = Data.EventPage

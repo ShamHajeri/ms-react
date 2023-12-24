@@ -5,6 +5,7 @@
     background-image: url(../../assert/moon.png);
     background-repeat: no-repeat;
     transition-duration: 500ms;
+   
 }
 
 .mainTitle{
@@ -16,7 +17,7 @@
     font-size: 4.5rem;
     color: white;
     font-weight: 500;
-    
+  
 
 }
 .subHeading{
