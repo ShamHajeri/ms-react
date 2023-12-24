@@ -21,7 +21,7 @@ const EventPage = {
         "Name": "Planet",
         "url": "www.stenciljs.com",
         "description": "dolor sit, amet consectetur dolor sit, amet consectetur adipisicing elit. Incidunt magni hic ab eaque, tempora asperiores consectetur, tempora asperiores consectetur",
-        "EIPosition":"85% 75%",
+        "EIPosition":"75% 75%",
         "EISize":"30rem"
 
     },
