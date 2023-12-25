@@ -1,7 +1,10 @@
 import './navBar.css'
-const NavBar = (props) => {
+import HomePage from '../../assert/data/Data.ts';
 
-    const navElementMap = [{ "Name": "Space", "url": "www.stenciljs.com" }, { "Name": "Planet", "url": "www.stenciljs.com" }, { "Name": "Sreach", "url": "www.google.com" }, { "Name": "Contact", "url": "www.google.com" }];
+
+const NavBar = () => {
+
+    const navElementMap = HomePage.NavBar.nav
     const navList = navElementMap.map((item) =>
         <a className="navElement" href={item.url}>{item.Name}</a>
     )

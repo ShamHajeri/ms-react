@@ -12,8 +12,6 @@ function App() {
       <Route path='/home' element={<HomePages/>}/>
       <Route path='/event' element={<EventPage/>}/>
       <Route path='/contactUs' element={<ContactUs/>}/>
-      {/* <EventPage></EventPage>
-      <ContactUs></ContactUs> */}
     </Routes>
    
     </>

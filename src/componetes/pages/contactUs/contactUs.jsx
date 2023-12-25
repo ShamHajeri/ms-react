@@ -1,7 +1,7 @@
 import './contactUs.css';
 import NavBar from '../../navBar/navBar';
 import Footer from '../../footer/footer';
-import logo from '../../../assert/sun.png'
+import logo from '../../../assert/logo.png'
 
 const ContactUs = () => {
     return (

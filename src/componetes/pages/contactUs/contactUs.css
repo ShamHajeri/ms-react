@@ -12,8 +12,8 @@
     align-self: center;
 }
 .projectLogo{
-    width: 6rem;
-    height: 6rem;
+    width: 10rem;
+    height: auto;
     margin: auto;
 }
 p{

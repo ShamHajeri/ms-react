@@ -4,6 +4,7 @@ import HomeTitle from '../../homeTitle/homeTitle';
 import SildeShow from '../../sildeShow/sildeShow';
 import Footer from '../../footer/footer';
 import HomePage from '../../../assert/data/Data.ts';
+
 const HomePages = () => {
 
     return (
@@ -11,7 +12,7 @@ const HomePages = () => {
             <div class="mainScreen">
                 <NavBar />
                 <HomeTitle HomeTitleData={HomePage.HomeTitle}/>
-                <SildeShow/>
+                <SildeShow sildes={HomePage.SildesData}/>
                 <Footer/>
             </div>
         </>
