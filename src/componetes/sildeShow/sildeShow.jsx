@@ -8,12 +8,11 @@ const SildeShow = (props) => {
     let [current, setCurrent] = useState(0);
     const Dashs = sildesData.map((item, index) => <div class='dashClass' style={{ backgroundColor: `${current === index ? "white" : "rgb(60, 60, 60)"}` }} />)
 
-
     return (
         <div class='mainSildes'>
             <div class='sildeShow'>
                 <div class='arrowBtn' onClick={() => { current === -1 ? setCurrent(sildesData.length - 1) : setCurrent(current--) }}>&lt;</div>
-                <Sildes text={sildesData[1].text} image={sildesData[1].url} />
+                <Sildes text={sildesData[current].text} image={sildesData[current].url} />
                 <div class='arrowBtn' onClick={() => { current === sildesData.length ? setCurrent(0) : setCurrent(current++) }}>&gt;</div>
             </div>
             <div class='dash'>
