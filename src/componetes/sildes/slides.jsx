@@ -3,8 +3,7 @@ import aa from '../../assert/moon.png'
 
 
 const Sildes = (Props) => {
-    // console.log(aa)
-    //  const url = '../../assert/'+aa.{Props.image};
+
 
     return (<>
         <div class='sildes'>

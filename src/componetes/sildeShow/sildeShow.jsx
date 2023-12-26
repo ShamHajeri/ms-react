@@ -5,22 +5,20 @@ import { useState } from 'react';
 
 const SildeShow = (props) => {
     const sildesData = props.sildes.sildes
-   let [current, setCurrent] = useState(2);
-    const arrowPervious = () => {
-        if (current > 0)
-            setCurrent(current--);
-    }
-    const arrowNext = () => {
-        if (current < 4)
-            setCurrent(current++);
-    }
+    let [current, setCurrent] = useState(0);
+    const Dashs = sildesData.map((item, index) => <div class='dashClass' style={{ backgroundColor: `${current === index ? "white" : "rgb(60, 60, 60)"}` }} />)
+
 
     return (
         <div class='mainSildes'>
             <div class='sildeShow'>
-                <span class='arrowBtn' onClick={arrowPervious}>&lt;</span>
-                <Sildes text={sildesData[current].text} image={sildesData[current].url} />
-                <span class='arrowBtn' onClick={arrowNext}>&gt;</span>
+                <div class='arrowBtn' onClick={() => { current === -1 ? setCurrent(sildesData.length - 1) : setCurrent(current--) }}>&lt;</div>
+                <Sildes text={sildesData[1].text} image={sildesData[1].url} />
+                <div class='arrowBtn' onClick={() => { current === sildesData.length ? setCurrent(0) : setCurrent(current++) }}>&gt;</div>
+            </div>
+            <div class='dash'>
+                {Dashs}
+
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ const HomeTitle = (props) => {
         window.addEventListener("scroll", listenToScroll);
         return () =>
             window.removeEventListener("scroll", listenToScroll);
-    }, [])
+    }, [bIPosition])
     const listenToScroll = () => {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         if (winScroll > 150) {
