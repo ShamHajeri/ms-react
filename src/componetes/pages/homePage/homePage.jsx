@@ -5,7 +5,7 @@ import HomeTitle from '../../homeTitle/homeTitle';
 import SildeShow from '../../sildeShow/sildeShow';
 import Footer from '../../footer/footer';
 import HomePage from '../../../assert/data/Data.ts';
-import News from '../../news/news.jsx';
+import NewsEvent from '../../news/newsEvent';
 
 export class HomePages extends React.Component  {
 render(){
@@ -13,8 +13,8 @@ render(){
             <div class="mainScreen">
                 <NavBar />
                 <HomeTitle HomeTitleData={HomePage.HomeTitle}/>
+                <NewsEvent/>
                 <SildeShow sildes={HomePage.SildesData}/>
-                <News/>
                 <Footer/>
             </div>
     )
