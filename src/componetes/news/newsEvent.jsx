@@ -21,12 +21,17 @@ const NewsEvent = () => {
 
     ]
     return (
+        <div>
+            <h3>Latest Space News</h3>
+            <div class='newsBanner'>
 
-        <div class='newsBanner'>
-            {datar.map((item)=>
-                <News newsData={item}/>
-            )}
+                {datar.map((item) =>
+                    <News newsData={item} />
+                )}
+            </div>
+
         </div>
+
     )
 }
 

@@ -6,8 +6,16 @@ import SildeShow from '../../sildeShow/sildeShow';
 import Footer from '../../footer/footer';
 import HomePage from '../../../assert/data/Data.ts';
 import NewsEvent from '../../news/newsEvent';
+import { Api } from '../../dataService.ts'; 
 
 export class HomePages extends React.Component  {
+    constructor(){
+        super();
+        this.data=[]
+    }
+   async componentDidMount(){
+      this.data= await Api.request('','GET','');
+    }
 render(){
     return (
             <div class="mainScreen">
