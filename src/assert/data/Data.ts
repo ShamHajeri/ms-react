@@ -75,4 +75,5 @@ const HomePage = {
     HomeTitle, EventPage,NavBar,SildesData
 }
 
+
 export default HomePage;

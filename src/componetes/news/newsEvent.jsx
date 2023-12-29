@@ -3,29 +3,14 @@ import './news.css'
 import News from '../news/news';
 
 
-const NewsEvent = () => {
+const NewsEvent = (props) => {
 
-    const datar = [
-        {
-            heading: 'jfon iuhu whahioahoi HIAAHFAIOSA HIOAH IISASUHVAH WAOIHOIHOIAI IOAH IOASIAUAVIAIPW',
-            img: ''
-        },
-        {
-            heading: 'jfon iuhu whahioahoi HIAAHFAIOSA HIOAH IISASUHVAH WAOIHOIHOIAI IOAH IOASIAUAVIAIPW',
-            img: ''
-        },
-        {
-            heading: 'jfon iuhu whahioahoi HIAAHFAIOSA HIOAH IISASUHVAH WAOIHOIHOIAI IOAH IOASIAUAVIAIPW',
-            img: ''
-        }
-
-    ]
+    const data = props.NewsEventData.articles;
     return (
         <div>
             <h3>Latest Space News</h3>
             <div class='newsBanner'>
-
-                {datar.map((item) =>
+                {data.map((item) =>
                     <News newsData={item} />
                 )}
             </div>

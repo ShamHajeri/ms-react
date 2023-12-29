@@ -7,21 +7,25 @@ import Footer from '../../footer/footer';
 import HomePage from '../../../assert/data/Data.ts';
 import NewsEvent from '../../news/newsEvent';
 import { Api } from '../../dataService.ts'; 
+import { newsMockData } from '../../../assert/data/newsMock.ts';
 
 export class HomePages extends React.Component  {
     constructor(){
         super();
         this.data=[]
     }
-   async componentDidMount(){
-      this.data= await Api.request('','GET','');
+   async componentWillMount(){
+    //   this.data= await Api.request('','GET','');
+    this.data.newData= newsMockData;
+    console.log(this.data)
+
     }
 render(){
     return (
             <div class="mainScreen">
                 <NavBar />
                 <HomeTitle HomeTitleData={HomePage.HomeTitle}/>
-                <NewsEvent/>
+                <NewsEvent NewsEventData={this.data.newData}/>
                 <SildeShow sildes={HomePage.SildesData}/>
                 <Footer/>
             </div>
