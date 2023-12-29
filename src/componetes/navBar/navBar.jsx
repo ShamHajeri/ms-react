@@ -6,15 +6,15 @@ const NavBar = () => {
 
     const navElementMap = HomePage.NavBar.nav
     const navList = navElementMap.map((item) =>
-        <a className="navElement" href={item.url}>{item.Name}</a>
+        <a class="navElement" href={item.url}>{item.Name}</a>
     )
     return (
         <div class="navBar">
             <div>
-                <div className="navLogo"/>
+                <div class="navLogo"/>
   
             </div>
-            <div className='navElements'>
+            <div class='navElements'>
                 {navList}
             </div>
         </div>
