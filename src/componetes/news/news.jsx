@@ -1,6 +1,5 @@
 import React from 'react';
 import './news.css';
-import aa from '../../assert/logo.png'
 
 
 const News = (props) => {

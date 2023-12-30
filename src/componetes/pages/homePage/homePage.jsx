@@ -30,6 +30,7 @@ export class HomePages extends React.Component {
     this.updateData()
   }
 
+
   render() {
     return (
       <div className="mainScreen">
