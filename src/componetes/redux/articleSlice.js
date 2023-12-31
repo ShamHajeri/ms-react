@@ -12,7 +12,7 @@ const articleSlice = createSlice({
             state.articles = action.payload;
         },
         getArticle(state){
-            return state.articleSlice;
+            return state.articles;
         }
 
     }

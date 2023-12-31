@@ -2,7 +2,7 @@ import './eventPage.css';
 import NavBar from '../../navBar/navBar';
 import Footer from '../../footer/footer';
 import Data from '../../../assert/data/Data.ts';
-import {  useState } from 'react';
+import { useState } from 'react';
 
 const EventPage = () => {
     const data = Data.EventPage
@@ -20,18 +20,19 @@ const EventPage = () => {
 
     return (
         <>
-            <NavBar></NavBar>
-            <div class='event' style={{ backgroundPosition: `${data.Event[eventNumber].EIPosition}`, backgroundSize:`${data.Event[eventNumber].EISize}` }}>
+            <NavBar />
+            <div class='event' style={{ backgroundPosition: `${data.Event[eventNumber].EIPosition}`, backgroundSize: `${data.Event[eventNumber].EISize}` }}>
                 <div class="eventDiv" >
                     <div class='descriptionBox' >
-                        {data.Event[eventNumber].description}
+                        <span>{data.Event[eventNumber].content}</span><br />
+                        <button class='mainBtn'> Expoler </button>
                     </div>
                 </div>
                 <div class="timeLine">
                     {TLHTML}
                 </div>
             </div>
-            <Footer></Footer>
+            <Footer />
         </>)
 }
 export default EventPage;

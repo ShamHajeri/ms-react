@@ -6,6 +6,7 @@ import EventPage from './componetes/pages/eventPage/eventPage';
 import ContactUs from './componetes/pages/contactUs/contactUs';
 import Search from './componetes/search/search';
 import Description from './componetes/pages/description/description';
+import ReviewPage from './componetes/pages/reviewPage/reviewPage';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Route path='/event' element={<EventPage/>}/>
       <Route path='/contactUs' element={<ContactUs/>}/>
       <Route path='/dis' element={<Description/>}/>
+      <Route path='/Review' element={<ReviewPage/>}/>
     </Routes>
    
     </>
