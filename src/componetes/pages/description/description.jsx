@@ -26,6 +26,9 @@ const Description = () => {
                 <span class='titleReport'> {data.description}</span><br/><br/>
                 <span>{data.content}</span>
                 </div>
+                <button onClick={()=>{window.location.href=`${data.url}`}} class="goToSiteBtn">
+                    Go to site 
+                </button>
             </div>
             <Footer/>
         </div>:""

@@ -14,8 +14,10 @@
     color: white;
     aspect-ratio: 1/1;
     flex-direction: column;
+    border-left: 10px solid green; 
+    border-radius: 0rem 1.5rem 1.5rem 0rem;
 
-}
+} 
 
 .mainElement{
     display: flex;
@@ -28,7 +30,7 @@
     padding: 2rem 2rem 2rem 2rem;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0.5rem;
+    border-radius: 0rem 1.5rem 1.5rem 0rem;
     
 }
 .authorOther{
@@ -57,4 +59,11 @@
     height: auto;
     margin: auto;
     padding: 1rem 1rem 1rem 1rem;
+}
+.goToSiteBtn{
+    padding: 1rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0rem 0rem 1.5rem 0rem;
 }
