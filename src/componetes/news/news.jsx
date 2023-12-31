@@ -1,15 +1,20 @@
 import React from 'react';
 import './news.css';
+import { useDispatch } from 'react-redux';
+import { updateArticle } from '../redux/articleSlice';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const News = (props) => {
     const data = props.newsData
-    console.log(data)
+    const dispatch = useDispatch()
+    const navigate = useNavigate();
     return (
-        <div class='newsWidgets' >
-                <div class='newsElement' style={{backgroundImage:`url("${data.urlToImage}")`}}>
-                   <span class='newsTitle'>{data.description}</span> 
-                </div>
+        <div class='newsWidgets' onClick={() => { dispatch(updateArticle(data)); navigate('/dis'); }}>
+            <div class='newsElement' style={{ backgroundImage: `url("${data.urlToImage}")` }}>
+                <span class='newsTitle'>{data.title}</span>
+            </div>
         </div>
     )
 }

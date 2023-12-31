@@ -1,20 +1,37 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import NavBar from '../../navBar/navBar';
+import './description.css';
+import Footer from '../../footer/footer';
 
-export class DescriptionPage extends React.Component{
-    constructor(){
-        super();
-        this.apiData=[]
-    }
-    componentWillMount(){
+const Description = () => {
 
-    }
+    const data = useSelector((state) => state.article.articles);
 
-    render(){
-        return(
+    return (data?
         <div class='description'>
-            
-        </div>
-        )
-    }
+            <NavBar />
+            <div class='mainDescription'>
+                <div class='mainElement'>
+                    <div class='imageAndOther'
+                        style={{ backgroundImage: `url("${data.urlToImage}")` }}
+                    >
+                    </div>
+                    <div class='authorOther'>
+                        <span class='titleReport'> {data.title}</span>
+                        <span class='sourceReport'>{data.author} &sdot; {data.source.name} &sdot; {data.publishedAt}</span>
+                    </div>
+                </div>
+                <div class='moreDetail'>
+                <span class='titleReport'> {data.description}</span><br/><br/>
+                <span>{data.content}</span>
+                </div>
+            </div>
+            <Footer/>
+        </div>:""
 
+
+    )
 }
+
+export default Description

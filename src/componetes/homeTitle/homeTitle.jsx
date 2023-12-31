@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './homeTitle.css'
+import './homeTitle.css';
 
 const HomeTitle = (props) => {
 

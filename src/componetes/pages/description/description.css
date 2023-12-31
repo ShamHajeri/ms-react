@@ -1,0 +1,60 @@
+.description{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 1rem;
+}
+.mainDescription{
+    width: max-content;
+    height: 50rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    display: flex;
+    color: white;
+    aspect-ratio: 1/1;
+    flex-direction: column;
+
+}
+
+.mainElement{
+    display: flex;
+}
+
+.imageAndOther{
+    width: 50rem;
+    height: 25rem;
+    margin: auto;
+    padding: 2rem 2rem 2rem 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    
+}
+.authorOther{
+    width: 15rem;
+    height: 30rem;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+.titleReport{
+    font-size: x-large;
+    font-weight: 800;
+}
+.sourceReport{
+    font-size: small;
+    font-weight: 100;
+
+}
+.moreDetail{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 1rem 1rem 1rem 1rem;
+}
