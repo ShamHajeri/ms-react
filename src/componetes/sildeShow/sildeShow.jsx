@@ -11,7 +11,7 @@ const SildeShow = (props) => {
     return (
         <div class='mainSildes'>
             <div class='sildeShow'>
-                <div class='arrowBtn' onClick={() => { current === -1 ? setCurrent(sildesData.length - 1) : setCurrent(current--) }}>&lt;</div>
+                <div class='arrowBtn' onClick={(current) => { current === -1 ? setCurrent(sildesData.length - 1) : setCurrent(current--) }}>&lt;</div>
                 <Sildes text={sildesData[current].text} image={sildesData[current].url} />
                 <div class='arrowBtn' onClick={() => { current === sildesData.length ? setCurrent(0) : setCurrent(current++) }}>&gt;</div>
             </div>

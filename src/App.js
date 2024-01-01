@@ -6,7 +6,7 @@ import EventPage from './componetes/pages/eventPage/eventPage';
 import ContactUs from './componetes/pages/contactUs/contactUs';
 import Search from './componetes/search/search';
 import Description from './componetes/pages/description/description';
-import ReviewPage from './componetes/pages/reviewPage/reviewPage';
+import ReviewPage from './componetes/pages/description/reviewPage';
 
 
 

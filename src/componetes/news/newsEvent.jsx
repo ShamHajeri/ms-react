@@ -5,8 +5,8 @@ const NewsEvent = (props) => {
   
     const data = props.NewsEventData.articles;
     return (data?
-        <div>
-            <h3>Latest Space News</h3><br/><br/>
+        <div style={{textAlign:`center`}}>
+            <span class='subHeading' >Latest Space News</span><br/><br/>
             <div class='newsBanner'>
                 {data.map((item,) =>
                     <News newsData={item} />

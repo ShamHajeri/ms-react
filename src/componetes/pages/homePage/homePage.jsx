@@ -19,7 +19,7 @@ export class HomePages extends React.Component {
 
   async updateData() {
     try {
-    //   const data = await Api.request('', 'GET', '');
+      // const data = await Api.request('', 'GET', '');
       const data = ''
       this.setState({ newsData: data?data:newsMockData });
     } catch (error) {

@@ -3,10 +3,13 @@ import NavBar from '../../navBar/navBar';
 import Footer from '../../footer/footer';
 import Data from '../../../assert/data/Data.ts';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { updateReview } from '../../redux/reviewSlice.js';
 
 const EventPage = () => {
     const data = Data.EventPage
     const [eventNumber, setEventNumber] = useState(0);
+    const dispatch =useDispatch();
 
     const TLHTML = data.Event.map((item, index) => <div class="TLName"
         style={{
@@ -25,7 +28,10 @@ const EventPage = () => {
                 <div class="eventDiv" >
                     <div class='descriptionBox' >
                         <span>{data.Event[eventNumber].content}</span><br />
-                        <button class='mainBtn'> Expoler </button>
+                        <button onClick={()=>{
+                            dispatch(updateReview(data.Event[eventNumber]));
+                            window.location.href='/Review';
+                        }} class='mainBtn'> Expoler </button>
                     </div>
                 </div>
                 <div class="timeLine">

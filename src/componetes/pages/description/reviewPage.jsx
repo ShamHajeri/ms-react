@@ -4,43 +4,38 @@ import NavBar from '../../navBar/navBar';
 import './description.css';
 import Footer from '../../footer/footer';
 
-const Description = () => {
+const ReviewPage = () => {
 
-    const data = useSelector((state) => state.store.articleReducer.article);
+    const reivewData = useSelector((state)=>state.store.reviewReducer.review);
+    console.log(reivewData);
 
-    return (data ?
+    return (reivewData ?
         <div class='description'>
             <NavBar />
-            <div class='mainDescription'>
+            <div class='mainDescription' style={{height:`60rem`}}>
                 <div class='mainElement'>
                     <div class='imageAndOther'
-                        style={{ backgroundImage: `url("${data.urlToImage}")` }}
+                        style={{ backgroundImage: `url("${reivewData.url}")` }}
                     >
                     </div>
                     <div class='authorOther'>
                         <span class='titleReport'>
-                            {data.title}
+                            {reivewData.name}
                         </span>
                         <span class='sourceReport'>
-                            {data.author} &sdot; {data.source.name}
+                            {reivewData.content}
                         </span>
                     </div>
                 </div>
                 <div class='moreDetail'>
-                    <span class='titleReport'> {data.description}</span><br /><br />
-                    <span>{data.content}</span>
+                    <span>{reivewData.description}</span>
                 </div>
-                <button
-                    onClick={() => { window.location.href = `${data.url}` }}
-                    class="goToSiteBtn">
-                    Go to site
-                </button>
             </div>
             <Footer />
         </div> : ""
 
-
     )
 }
 
-export default Description
+
+export default ReviewPage

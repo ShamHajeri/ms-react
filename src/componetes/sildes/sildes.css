@@ -8,6 +8,10 @@
     align-items: center;
 
 }
+.sildes{
+    width: 95%;
+    height: auto;
+}
 
 .sildeImg {
     width: 50%;

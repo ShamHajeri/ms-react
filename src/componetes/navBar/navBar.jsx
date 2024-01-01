@@ -11,7 +11,9 @@ const NavBar = () => {
     return (
         <div class="navBar">
             <div>
-                <div class="navLogo"/>
+                <div class="navLogo"  onClick={()=>{
+                        window.location.href='/home'
+                    }}/>
   
             </div>
             <div class='navElements'>
