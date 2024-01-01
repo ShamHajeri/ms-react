@@ -8,7 +8,7 @@ const NewsEvent = (props) => {
         <div style={{textAlign:`center`}}>
             <span class='subHeading' >Latest Space News</span><br/><br/>
             <div class='newsBanner'>
-                {data.map((item,) =>
+                {data.map((item) =>
                     <News newsData={item} />
                 )}
             </div>
