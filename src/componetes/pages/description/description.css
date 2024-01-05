@@ -61,6 +61,10 @@
     overflow-y: auto;
 
 }
+.moreDetail > span{
+    line-height: 2rem;
+    text-align: justify;
+}
 .goToSiteBtn{
     padding: 1rem;
     font-weight: 700;
@@ -68,6 +72,13 @@
     background-color: rgb(255, 255, 255);
     border-radius: 0rem 0rem 1.5rem 0rem;
     cursor: pointer;
+}
+.pointDiv{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+.pointDiv>h4{
+    margin: 0px;
 }
 ::-webkit-scrollbar{
     width: 0.5rem;

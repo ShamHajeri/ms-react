@@ -5,8 +5,6 @@ import { updateArticle } from '../redux/articleSlice';
 const SearchWidget = (props) => {
     const data = props.data.articles;
     const dispatch=useDispatch();
-    console.log(data)
-
     return (
         <>
             {Array.isArray(data) && data.map((item, index) => (

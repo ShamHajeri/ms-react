@@ -17,7 +17,6 @@ const SildeShow = (props) => {
             </div>
             <div class='dash'>
                 {Dashs}
-
             </div>
         </div>
     )

@@ -18,7 +18,7 @@ const EventPage = () => {
     `}}
         onClick={() => {
             setEventNumber(index)
-        }}><span>{item.Name}</span></div>);
+        }}><span>{item.name}</span></div>);
 
 
     return (
