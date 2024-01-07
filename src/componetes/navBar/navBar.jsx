@@ -16,6 +16,12 @@ const NavBar = () => {
         SetSearchShow("unset");
     }
 
+    const SearchHideBtn = (data) => {
+        if(data){
+            SetSearchShow("none");
+        }
+    }
+
     return (
         <div class="mainBar">
             <div class="navBar">
@@ -33,7 +39,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <div class='sBox' style={{display:`${searchShow}`}}> <Search /></div>
+            <div class='sBox' style={{display:`${searchShow}`}}> <Search closeBtn={SearchHideBtn}/></div>
         </div>
     )
 }

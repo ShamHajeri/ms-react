@@ -10,15 +10,27 @@
 }
 .search{
     width: 70%;
-    height: auto;
+    height: 5rem;
     margin: auto;
     padding: 3rem 3rem 3rem 3rem;
 }
+.search > .mainBtn{
+    padding: 1.5rem;
+    border-radius: 0rem 2rem 2rem 0rem;
+    background-color: rgb(255, 83, 83);
+    color: white;
+    font-size: medium;
+    border: none;
+
+}
 .searchWidget input{
-    width: 100%;
+    width: 90%;
+    height: 100%;
     background-color: white;
     color: black;
     height: 3rem;
+    padding: 2rem;
+    border-radius: 2rem 0rem 0rem 2rem;
 }
 .searchContent{
     width: 30rem;
@@ -34,6 +46,5 @@
     color: white;
     font-weight: 500;
     font-size: large;
-    /* padding: 2rem 2rem 2rem 2rem; */
-
+    cursor: pointer;
 }
