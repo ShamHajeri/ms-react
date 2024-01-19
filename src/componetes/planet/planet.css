@@ -1,0 +1,47 @@
+
+.container-planet{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    rotate: 10deg;
+  
+  }
+  .planet-img{
+      width: 400px;
+      height: 400px;
+      clip-path: circle(50%);
+      background-color:rgb(38, 100, 200);
+      /* background-image: url(../../assert/earth.jpg); */
+      background-size: cover;
+      animation: planetrotation 10s infinite;
+      margin: auto;
+      background-repeat: repeat-x;
+  
+  }
+  .shadow-other{
+      width: 400px;
+      height: 400px;
+      clip-path: circle(50%);
+      background-image: url(../../assert/dn.png);
+      background-size: cover;
+      position: absolute;
+      z-index: 1;
+  
+  
+  }
+  
+  @keyframes planetrotation {
+      0%{
+          background-position:100%;
+      }
+   
+      100%{
+          background-position:-100%;
+      }
+  
+  }

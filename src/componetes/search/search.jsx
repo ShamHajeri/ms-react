@@ -3,36 +3,32 @@ import { Api } from '../dataService.ts';
 import './search.css'
 import SearchWidget from './searchWidget';
 
-const Search = ({closeBtn}) => {
+const Search = ({ closeBtn }) => {
 
-    const [input,setInput]=useState("");
-    const [result,setResult]=useState([]);
-    const [isDom,setIsDom]=useState(false);
+    const [state, setState] = useState({ input: "", result: [], isDom: false })
 
-    const getData= async(value)=>{
-        setInput(value)
-        console.log(value);
-        console.log(result);
-        // const url=""
-        const url = 'https://newsapi.org/v2/everything?q='+`${value}`+'&pageSize=6&language=en';
-        const data= await Api.request(url,'GET','');
-        setResult(data)
+    const getData = async (value) => {
+        setState(prevState => { return { ...prevState, input: value } });
+        const url = 'https://newsapi.org/v2/everything?q=' + `${value}` + '&pageSize=6&language=en';
+        const data = await Api.request(url, 'GET', '');
+        setState(prevState => { return { ...prevState, result: data } });
     }
     
-    const hideDom=()=>{
-        setIsDom(true)
-        closeBtn(isDom);
+
+    const hideDom = () => {
+        setState(prevState => { return { ...prevState, isDom: true } });
+        closeBtn(state.isDom);
     }
 
     return (
         <div class="searchDom">
             <div class='searchWidget'>
                 <div class='search'>
-                    <input type="search" value={input} onChange={(e)=>getData(e.target.value)} /> <button onClick={hideDom} class='mainBtn'>Close</button>
+                    <input type="search" value={state.input} onChange={(e) => getData(e.target.value)} /> <button onClick={hideDom} class='mainBtn'>Close</button>
                 </div>
             </div>
             <div class='result'>
-                <SearchWidget data={result} />
+                <SearchWidget data={state.result} />
             </div>
         </div>
 
