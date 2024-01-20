@@ -2,4 +2,10 @@
 *::before,
 *::after{
   box-sizing:border-box;
+  cursor:url(../src/assert/cursor.png), default;
+
+}
+body{
+ 
+  /* cursor: url(../src/assert/line.png),pointer; */
 }

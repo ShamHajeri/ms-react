@@ -40,8 +40,8 @@ const EventPage = {
         "pointContent": "Mars, with its fascinating landscape and the promise of scientific discovery, remains a focal point for space exploration. Ongoing missions and future endeavors hold the potential to answer fundamental questions about the planet's history, the possibility of life, and the broader context of our place in the universe. Mars stands as a testament to human curiosity and the relentless pursuit of knowledge in the vast expanse of our solar system."
       }
     ],
-    "EIPosition": "10% 45%",
-    "EISize": "10rem"
+    "EIPosition": "10%",
+    "EISize": "600px"
 
   },
   {
@@ -106,8 +106,8 @@ const EventPage = {
         "siteLink": "http://www.cnsa.gov.cn/english/n6465652/index.html"
       }
     ],
-    "EIPosition": "75% 75%",
-    "EISize": "30rem"
+    "EIPosition": "25% ",
+    "EISize": "600px"
 
   },
   {
@@ -142,8 +142,8 @@ const EventPage = {
         "siteLink": "https://mars.nasa.gov/technology/helicopter/"
       }
     ],
-    "EIPosition": "70% 45%",
-    "EISize": "40rem"
+    "EIPosition": " 45%",
+    "EISize": "700px"
 
   },
   {
@@ -178,8 +178,8 @@ const EventPage = {
         "siteLink": "https://www.nasa.gov/content/aerial-vehicle-for-exploring-mars"
       }
     ],
-    "EIPosition": "18% 95%",
-    "EISize": "60rem"
+    "EIPosition": "55%",
+    "EISize": "750px"
 
 
   },

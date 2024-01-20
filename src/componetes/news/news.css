@@ -3,7 +3,7 @@ h3{
     text-align: center;
 }
 .newsWidgets {
-    width: 30%;
+    width: 500px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
@@ -40,4 +40,9 @@ h3{
     color: rgb(255, 250, 250);
     background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.653));
     backdrop-filter: blur(5px);
+    transition: width 500ms;
+}
+.newsTitle:hover{
+    width: 100%;
+    height: 50%;
 }
