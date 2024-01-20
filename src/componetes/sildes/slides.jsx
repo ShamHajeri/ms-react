@@ -1,18 +1,20 @@
 import './sildes.css'
 import aa from '../../assert/moon.png'
+import ETB from '../planet/planet'
 
 
-const Sildes = (Props) => {
+const Sildes = ({sildeData}) => {
 
 
     return (<>
         <div class='sildes'>
-            <div class='sildeElement'>
-                <img alt='' class='sildeImg' src={aa} />
+            <div class="sildeElement" >
+                <ETB etb={sildeData.url}/>
             </div>
-            <div class='sildeElement'>
+            <div>
                 <span class='sildeText'>
-                    {Props.text}
+                    <h4>{sildeData.heading}</h4>
+                    {sildeData.text}
                 </span>
             </div>
 

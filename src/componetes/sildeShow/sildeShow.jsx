@@ -12,7 +12,7 @@ const SildeShow = (props) => {
         <div class='mainSildes'>
             <div class='sildeShow'>
                 <div class='arrowBtn' onClick={(current) => { current === -1 ? setCurrent(sildesData.length - 1) : setCurrent(current--) }}>&lt;</div>
-                <Sildes text={sildesData[current].text} image={sildesData[current].url} />
+                <Sildes sildeData={sildesData[current]}/>
                 <div class='arrowBtn' onClick={() => { current === sildesData.length ? setCurrent(0) : setCurrent(current++) }}>&gt;</div>
             </div>
             <div class='dash'>

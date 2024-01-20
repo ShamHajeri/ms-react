@@ -4,5 +4,6 @@
     margin: auto;
     display: grid;
     grid-template-columns: auto;
-    gap: 5rem;
+    gap: 10rem;
+    justify-content: space-evenly;
 }

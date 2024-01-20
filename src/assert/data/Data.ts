@@ -1,8 +1,8 @@
 const HomeTitle = {
-  defualtBIPosition: '65% 15%',
-  nextBIPosition: ' 15% 65%',
-  defualtBISize: '40rem',
-  nextBISize: '4rem',
+  defualtBIPosition: '15% ',
+  nextBIPosition: ' 55% ',
+  defualtBISize: '800px',
+  nextBISize: '250px',
   mainHeading: 'LEARN ABOUT THE MOON',
   subHeading: 'EARTH NATURAL SATELLITE',
   mainBtn: 'Explore More'
@@ -203,21 +203,21 @@ const NavBar = {
 }
 
 
-// const ETBData =
-//   [{
-//     "etb": "Earth",
-//     "":""
-//   }]
-
-
-
 const SildesData = {
   sildes: [
-    { "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eligendi enim, architecto recusandae perferendis vitae veritatis dolorum commodi veniam beatae atque officiis molestias consectetur ut. Fugit molestiae mollitia ex placeat numquam? Doloremque assumenda voluptatibus eveniet ipsum accusamus cupiditate. Vel reprehenderit ipsa necessitatibus, voluptatum adipisci laudantium laborum, ipsum asperiores, tempore quas deserunt fugit voluptatem labore. Nisi obcaecati veniam, aspernatur corporis placeat debitis molestiae illum nihil porro magni amet ex nobis, qui harum iusto nostrum reiciendis dolorem! Hic sint modi praesentium eveniet eaque. Earum laborum dolor facere error dolorem provident neque, totam dicta iste suscipit. Quia magnam repudiandae neque beatae qui simil", "url": "sun.png" },
-    { "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eligendi enim, architecto recusandae perferendis vitae veritatis dolorum commodi veniam beatae atque officiis molestias consectetur ut. Fugit molestiae veniet ipsum accusamus cupiditate. Vel reprehenderit ipsa necessitatibus, voluptatum adipisci laudantium laborum, ipsum asperiores, tempore quas deserunt fugit voluptatem labore. Nisi obcaecati veniam, aspernatur corporis placeat debitis molestiae illum nihil porro magni amet ex nobis, qui harum iusto nostrum reiciendis dolorem! Hic sint modi praesentium eveniet eaque. Earum laborum dolor facere error dolorem provident neque, totam dicta iste suscipit. Quia magnam repudiandae neque beatae qui simil", "url": "sun.png" },
-    { "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eligendi enim, architecto recusandae perferendis vitae molestias consectetur ut. Fugit molestiae mollitia ex placeat numquam? Doloremque assumenda voluptatibus eveniet ipsum accusamus cupiditate. Vel reprehenderit ipsa necessitatibus, voluptatum adipisci laudantium laborum, ipsum asperiores, tempore quas deserunt fugit voluptatem labore. Nisi obcaecati veniam, aspernatur corporis placeat debitis molestiae illum nihil porro magni amet ex nobis, qui harum iusto nostrum reiciendis dolorem! Hic sint modi praesentium eveniet eaque. Earum laborum dolor facere error dolorem provident neque, totam dicta iste suscipit. Quia magnam repudiandae neque beatae qui simil", "url": "sun.png" },
-    { "text": "Lorem ipsum dolor, sit amet consectetur adipisicing  commodi veniam beatae atque officiis molestias consectetur ut. Fugit molestiae mollitia ex placeat numquam? Doloremque assumenda voluptatibus eveniet ipsum accusamus cupiditate. Vel reprehenderit ipsa necessitatibus, voluptatum adipisci laudantium laborum, ipsum asperiores, tempore quas deserunt fugit voluptatem labore. Nisi obcaecati veniam, aspernatur corporis placeat debitis molestiae illum nihil porro magni amet ex nobis, qui harum iusto nostrum reiciendis dolorem! Hic sint modi praesentium eveniet eaque. Earum laborum dolor facere error dolorem provident neque, totam dicta iste suscipit. Quia magnam repudiandae neque beatae qui simil", "url": "sun.png" },
-    { "text": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eligendi enim, architecto recusandae perferendis vitae veritatisatque officiis molestias consectetur ut. Fugit molestiae mollitia ex placeat numquam? Doloremque assumenda voluptatibus eveniet ipsum accusamus cupiditate. Vel reprehenderit ipsa necessitatibus, voluptatum adipisci laudantium laborum, ipsum asperiores, tempore quas deserunt fugit voluptatem labore. Nisi obcaecati veniam, aspernatur corporis placeat debitis molestiae illum nihil porro magni amet ex nobis, qui harum iusto nostrum reiciendis dolorem! Hic sint modi praesentium eveniet eaque. Earum laborum dolor facere error dolorem provident neque, totam dicta iste suscipit. Quia magnam repudiandae neque beatae qui simil", "url": "sun.png" }]
+    { "heading":"ON Moon",
+      "text": "India has become the first country to soft-land near the south pole region of the moon. All the previous landings have been near the moon’s equator. The South Pole has various minerals and waters that have not yet been explored",
+     "url": "moon" },
+     { "heading":"The Planet Is 10,000 Times Older Than Humans",
+     "text": "Planet Earth has an estimated age of 4.5 billion years,” Jeremiah P. Ostricker, senior research scholar at Princeton University, tells Popular Mechanics. “Homo Sapiens has been around for at most 450,000 years, that is 1/10,000 the age of the planet. And then, more recently, we spread over the whole globe in 1/100,000 of the age of the planet.",
+    "url": "earth" },
+    { "heading":"How many robots are on Mars?",
+    "text": "Mars is currently home to 23 robots, with more planned in the future. Only three are currently operational, NASA's Curiosity rover, Perseverance rover, and Ingenuity helicopter. The Zhurong rover is currently inactive due to sandstorms but is meant to self-awaken in the near future.While there are as many as 23 robots on the surface of Mars, many either crash-landed on the surface or broke up on entry. To date, Mars is the only known planet in the Universe to be entirely inhabited by robots.",
+   "url": "mars" },
+   { "heading":"Size and Distance?",
+   "text": "With a radius of 43,440.7 miles (69,911 kilometers), Jupiter is 11 times wider than Earth. If Earth were the size of a nickel, Jupiter would be about as big as a basketball.From an average distance of 484 million miles (778 million kilometers), Jupiter is 5.2 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes Sunlight 43 minutes to travel from the Sun to Jupiter.",
+  "url": "jupiter" },
+  ]
 
 }
 

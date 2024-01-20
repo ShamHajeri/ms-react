@@ -1,19 +1,19 @@
 
 .container-planet{
-    width: 400px;
-    height: 400px;
+    width: inherit;
+    height: inherit;
     background-color: rgba(255, 255, 255, 0);
     padding: 0;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    rotate: 10deg;
+  
   
   }
   .planet-img{
-      width: 400px;
-      height: 400px;
+      width: inherit;
+      height: inherit;
       clip-path: circle(50%);
       background-color:rgb(38, 100, 200);
       /* background-image: url(../../assert/earth.jpg); */
@@ -24,8 +24,8 @@
   
   }
   .shadow-other{
-      width: 400px;
-      height: 400px;
+      width: inherit;
+      height: inherit;
       clip-path: circle(50%);
       background-image: url(../../assert/dn.png);
       background-size: cover;

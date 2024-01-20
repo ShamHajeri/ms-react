@@ -2,9 +2,7 @@
     width: 100%;
     height: 40rem;
     display:flex;
-    background-image: url(../../assert/moon.png);
-    background-repeat: no-repeat;
-    transition-duration: 500ms;
+    margin-top: -50px;
    
 }
 
@@ -14,7 +12,7 @@
     text-align: center;
 }
 .mainHeading{
-    font-size: 4.5rem;
+    font-size: 6rem;
     color: white;
     font-weight: 500;
   
@@ -36,3 +34,14 @@
     
 
 }
+.ETB_position{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: 50%;
+    z-index: -1;
+    transition-duration: 500ms;
+    
+}
+
+

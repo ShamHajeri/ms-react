@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './homeTitle.css';
+import ETB from '../planet/planet';
 
 const HomeTitle = (props) => {
 
@@ -11,6 +12,10 @@ const HomeTitle = (props) => {
         if (winScroll > 150) {
             setBIPosition(data.nextBIPosition)
             setBISize(data.nextBISize)
+        }
+        else{
+            setBIPosition(data.defualtBIPosition)
+            setBISize(data.defualtBISize)
         }
     };
     useEffect(() => {
@@ -26,7 +31,14 @@ const HomeTitle = (props) => {
 
     return (
         <>
-            <div class="homeTitle" style={{ backgroundPosition: `${bIPosition}`, backgroundSize: `${bISize}` }}>
+            <div class="homeTitle" >
+                <div class="ETB_position" style={{ 
+                    top: `${bIPosition}`
+                    ,right:`calc(100% -${bIPosition})`,
+                    width: `${bISize}`
+                    ,height:`${bISize}` }}>
+                <ETB  etb="moon"/>
+                </div>
                 <span class='mainTitle'>
                     <label class='mainHeading'>{data.mainHeading}</label><br />
                     <label class='subHeading'>{data.subHeading}</label><br /><br />

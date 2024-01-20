@@ -1,6 +1,6 @@
 .sildes {
     width: 90%;
-    height: 30rem;
+    height: 250px;
     margin: auto;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -8,24 +8,10 @@
     align-items: center;
 
 }
-.sildes{
-    width: 95%;
-    height: auto;
+.sildeElement{
+    width: 300px;
+    height: 300px;
 }
-
-.sildeImg {
-    width: 50%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.sildeImg:hover{
-    transform: rotate(45deg);
-    transition-duration: 500ms;
-}
-
 .sildeText {
     width: 90%;
     height: 10rem;
