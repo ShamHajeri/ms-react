@@ -39,21 +39,48 @@
 
 .timeLine{
     width: 200px;
-    height: 500px;
-    display: grid;
+    height: 900px;
     position: absolute;
     z-index: 2;
     right: 10%;
-    top: 20%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(255, 255, 255, .15) 51.97%, rgba(217, 217, 217, 0.00) 100%);
+    backdrop-filter: blur(5px);
+
+}
+.timeLine-planet{
+    width: 200px;
+    height: 900px;
+    position: absolute;
+    z-index: 2;
+    right: 0%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(255, 255, 255, .15) 51.97%, rgba(217, 217, 217, 0.00) 100%);
+    backdrop-filter: blur(10px);
+
+}
+.timeLine-element{
+    width: inherit;
+    height: 450px;
+    display: grid;
+    position: absolute;
+    transition: top 900ms;
+
 }
 .TLName{
+    width: 100%;
+    height: 100%;
     color: white;
+    display: flex;
     text-align:center;
-    margin: auto;
-    transition-duration:700ms;
     cursor: pointer;
+
 }
 .TLName>span{
+    width: 90px;
+    height: 50px;
     cursor: pointer;
-    margin: 0;
+     margin: auto;
+     font-size: 1rem;
+}
+.TLName>p{
+    padding:0px 0px 0px 20px;
 }

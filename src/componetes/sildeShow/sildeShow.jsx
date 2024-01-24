@@ -1,24 +1,26 @@
-import './sildeShow.css'
+import './sildeShow.css';
 import Sildes from '../sildes/slides';
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
 
 const SildeShow = (props) => {
-    const sildesData = props.sildes.sildes
-    let [current, setCurrent] = useState(0);
-    const Dashs = sildesData.map((item, index) => <div class='dashClass' style={{ backgroundColor: `${current === index ? "white" : "rgb(60, 60, 60)"}` }} />)
+    const sildesData = props.sildes.sildes;
+    let [current, setCurrent] = useState(2);
+
+    const Dashs = sildesData.map((item, index) => (
+        <div className='dashClass' style={{ backgroundColor: `${current === index ? "white" : "rgb(60, 60, 60)"}` }} />
+    ));
+
 
     return (
-        <div class='mainSildes'>
-            <div class='sildeShow'>
-                <div class='arrowBtn' onClick={(current) => { current === -1 ? setCurrent(sildesData.length - 1) : setCurrent(current--) }}>&lt;</div>
-                <Sildes sildeData={sildesData[current]}/>
-                <div class='arrowBtn' onClick={() => { current === sildesData.length ? setCurrent(0) : setCurrent(current++) }}>&gt;</div>
+        <div className='mainSildes'>
+            <div className='sildeShow'>
+                <div className='arrowBtn' onClick={() => { setCurrent((prev) => (prev === 0 ? sildesData.length - 1 : prev - 1)); }}>&lt;</div>
+                <Sildes sildeData={sildesData[current]} />
+                <div className='arrowBtn' onClick={() => { setCurrent((prev) => (prev === sildesData.length - 1 ? 0 : prev + 1)); }}>&gt;</div>
             </div>
-            <div class='dash'>
-                {Dashs}
-            </div>
+            <div className='dash'>{Dashs}</div>
         </div>
-    )
-}
-export default SildeShow
+    );
+};
+
+export default SildeShow;
