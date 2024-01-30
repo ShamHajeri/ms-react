@@ -198,7 +198,7 @@ const EventPage = {
 
 const NavBar = {
   nav: [
-    { "Name": "Planet", "url": "www.stenciljs.com" },
+    { "Name": "Planet", "url": "/planet" },
     { "Name": "About", "url": "/about" }]
 }
 

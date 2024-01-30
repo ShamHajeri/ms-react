@@ -35,9 +35,11 @@ export class HomePages extends React.Component {
     return (
       <div className="mainScreen">
         <NavBar />
+        <div class='container'>
         <HomeTitle HomeTitleData={HomePage.HomeTitle} />
         <NewsEvent NewsEventData={this.state.newsData} />
         <SildeShow sildes={HomePage.SildesData} />
+        </div>
         <Footer />
       </div>
     );

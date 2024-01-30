@@ -1,29 +1,30 @@
-.mainBar{
-    width: auto;
-    height: fit-content;
+.mainView {
+    width: 100%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
     transition: height 2s ease-in-out;
-    position:sticky;
+    position: sticky;
     top: 0;
     z-index: 1;
 
 }
+
 .navBar {
     width: 100%;
     height: 5rem;
     display: grid;
     grid-template-columns: 50% 20% 5%;
-    justify-content:center;
+    justify-content: center;
 
 }
 
 .navElements {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -42,8 +43,9 @@
     background-size: 8rem;
     background-repeat: no-repeat;
 }
-.searchClass1{
-    width: 100%;
+
+.searchClass1 {
+    width: fit-content;
     margin: auto;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
@@ -55,29 +57,72 @@
     opacity: 90%;
     cursor: pointer;
 }
-.searchBar{
+
+.searchBar {
     width: 100%;
     height: auto;
     display: flex;
 }
-.sBox{
-    animation: searchOpening 200ms ease-in-out 1  normal ;
-    
+
+.sBox {
+    animation: searchOpening 200ms ease-in-out 1 normal;
+
 
 }
+
+.mobileView {
+    width: 100%;
+    height: 100%;
+
+}
+
+.mobileViewElements {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+}
+
+.mobileViewElements>.navElement {
+    padding: 25px;
+}
+.containerr {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
 @keyframes searchOpening {
-    from{
+    0% {
         position: relative;
         box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-        background-color: rgba(255, 255, 255, .15);
+        background-color: rgba(255, 255, 255, 0);
         backdrop-filter: blur(5px);
         transform: translateY(-2rem);
-        
+
     }
 
-    to{
+    100% {
         transform: translateY(0rem);
 
     }
-    
+
 }

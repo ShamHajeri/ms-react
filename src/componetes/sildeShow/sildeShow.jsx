@@ -1,6 +1,6 @@
 import './sildeShow.css';
 import Sildes from '../sildes/slides';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const SildeShow = (props) => {
     const sildesData = props.sildes.sildes;

@@ -31,7 +31,7 @@ const EventPage = () => {
                     {TLP}
                 </div>
             </div>
-            {/* <Footer/> */}
+            
         </>)
 }
 export default EventPage;

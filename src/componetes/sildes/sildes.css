@@ -1,23 +1,35 @@
 .sildes {
-    width: 90%;
-    height: 250px;
+    width: 100%;
+    height: auto;
     margin: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 .sildeElement{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 .sildeText {
-    width: 90%;
-    height: 10rem;
+   
     text-align: center;
     margin: auto;
     justify-content: center;
     align-items: center;
     color: aliceblue;
+}
+
+@media screen and (max-with:400px) {
+    .sildes {
+        width: 200px;
+        height: 200px;
+ 
+    
+    }
+    .sildeElement{
+        width: inherit;
+        height: inherit;
+    }
 }

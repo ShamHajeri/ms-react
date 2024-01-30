@@ -24,7 +24,10 @@ const Search = ({ closeBtn }) => {
         <div class="searchDom">
             <div class='searchWidget'>
                 <div class='search'>
-                    <input type="search" value={state.input} onChange={(e) => getData(e.target.value)} /> <button onClick={hideDom} class='mainBtn'>Close</button>
+                    <input type="search" value={state.input} onChange={(e) => getData(e.target.value)} /> 
+                    <div class="closeBtn" onClick={hideDom} >
+                    <button class='mainBtn'>Close</button>
+                    </div>
                 </div>
             </div>
             <div class='result'>

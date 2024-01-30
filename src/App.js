@@ -17,7 +17,7 @@ function App() {
     <Routes>
       <Route path='/' element={<ETB etb="earth"/>}/>
       <Route path='/home' element={<HomePages/>}/>
-      <Route path='/event' element={<EventPage/>}/>
+      <Route path='/planet' element={<EventPage/>}/>
       <Route path='/about' element={<ContactUs/>}/>
       <Route path='/dis' element={<Description/>}/>
       <Route path='/Review' element={<ReviewPage/>}/>
