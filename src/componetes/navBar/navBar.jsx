@@ -8,10 +8,10 @@ const NavBar = () => {
 
     const [searchShow, SetSearchShow] = useState('none');
     const [screenWidth, SetScreenWidth] = useState('1000');
-    // const [toggleMenu, SettoggleMenu] = useState('none');
+    const [toggleMenu, SettoggleMenu] = useState(true);
 
     const navElementMap = HomePage.NavBar.nav;
-    const navigate = useNavigate();
+    const navigate = useNavigate(false);
 
     useLayoutEffect(() => {
         // Function to update the window width
@@ -45,40 +45,43 @@ const NavBar = () => {
         }
     }
 
-    const menuToggle =()=>{
-
+    const menuToggle = () => {
+        if (toggleMenu) {
+            SettoggleMenu(false)
+        }
+        else {
+            SettoggleMenu(true)
+        }
     }
 
     const mobileView = () => {
         return (<>
             <div class="navBar">
-                <div>
-                    <div class="navLogo" onClick={() => {
-                        window.location.href = '/home'
-                    }} />
-                </div>
-                <div class='navElements'>
-                    <div class="containerr">
+                <details>
+                    <summary class={toggleMenu ? '' : 'change'} onClick={menuToggle} >
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
+                    </summary>
+                    <div class='mobileViewElements'>
+                        {navList}
                     </div>
-                </div>
-            </div>
-            <div class="mobileView">
-                <div class='mobileViewElements'>
-                    {navList}
-                </div>
-                <div class='sBox' >
-                    <Search closeBtn={SearchHideBtn} />
-                </div>
 
+                    <Search closeBtn={SearchHideBtn} />
+
+                </details>
+                <div class='mobile-Logo'>
+                    <div class="navLogo" onClick={() => {
+                        window.location.href = '/home'
+                    }} ></div>
+                </div>
             </div>
+
         </>
         )
     }
     const desktopView = () => {
-        return (<>
+        return (<div className='desktopView'>
             <div class="navBar">
                 <div>
                     <div class="navLogo" onClick={() => {
@@ -95,7 +98,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div class='sBox' style={{ display: `${searchShow}` }}> <Search closeBtn={SearchHideBtn} /></div>
-        </>
+        </div>
         )
     }
 

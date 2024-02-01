@@ -4,26 +4,27 @@
     row-gap: 1rem;
 }
 .mainDescription{
-    width: max-content;
-    height: 50rem;
+    max-width: 1000px;
+    min-width: 200px;
+    height: 700px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
     margin: auto;
     display: flex;
     color: white;
-    aspect-ratio: 1/1;
     flex-direction: column;
     border-left: 10px solid green; 
     border-radius: 0rem 1.5rem 1.5rem 0rem;
 } 
 
 .mainElement{
+    width: 100%;
     display: flex;
 }
 
 .imageAndOther{
-    width: 50rem;
+    width: 75%;
     height: 25rem;
     margin: auto;
     padding: 2rem 2rem 2rem 2rem;
@@ -33,8 +34,8 @@
     
 }
 .authorOther{
-    width: 15rem;
-    height: 30rem;
+    width: fit-content;
+    /* height: 30rem; */
     padding: 2rem 2rem 2rem 2rem;
     margin: auto;
     border-radius: 0.5rem;
@@ -45,7 +46,8 @@
     justify-content: flex-start;
 }
 .titleReport{
-    font-size: x-large;
+    max-width: 60px;
+    font-size: large;
     font-weight: 800;
 }
 .sourceReport{
@@ -88,4 +90,9 @@
 }
 ::-webkit-scrollbar-thumb{
     background-color: black;
+}
+.ETBReview{
+    width: 200px;
+    height: 200px;
+    margin: auto;
 }

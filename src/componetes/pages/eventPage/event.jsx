@@ -1,16 +1,14 @@
 import './eventPage.css';
-import NavBar from '../../navBar/navBar';
-import Footer from '../../footer/footer';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { updateReview } from '../../redux/reviewSlice.js';
 import ETB from '../../planet/planet.jsx';
 
-const Event = ({eveData}) => {
-
+const Event = ({eve}) => {
+    const eveData=eve.data 
     const [eventNumber, setEventNumber] = useState(2);
     const dispatch = useDispatch();
-  
+       console.log(eveData)
     const TLHTML = eveData.map((item, index) => <div class="TLName"
         onClick={() => {
             setEventNumber(index)
@@ -23,7 +21,7 @@ const Event = ({eveData}) => {
             , width: `${eveData[eventNumber].EISize}`
             , height: `${eveData[eventNumber].EISize}`
         }}>
-            <ETB etb="mars" />
+            <ETB etb={eve.name} />
         </div>
         <div class="eventDiv" style={{
             left: `${eveData[eventNumber].EIPosition}`

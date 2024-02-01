@@ -1,4 +1,4 @@
-.mainView {
+.desktopView {
     width: 100%;
     height: max-content;
     display: flex;
@@ -66,8 +66,6 @@
 
 .sBox {
     animation: searchOpening 200ms ease-in-out 1 normal;
-
-
 }
 
 .mobileView {
@@ -87,28 +85,57 @@
 .mobileViewElements>.navElement {
     padding: 25px;
 }
-.containerr {
+
+.summary {
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #ffffff;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  .change .bar1 {
+}
+
+.change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-  }
+}
+
+details {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    right: 0%;
+    top: 0%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(7px);
+}
+
+details>summary {
+    list-style: none;
+}
+
+.mobile-Logo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+}
+
+
 
 @keyframes searchOpening {
     0% {

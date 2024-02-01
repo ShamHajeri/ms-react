@@ -15,8 +15,13 @@ const ContactUs = () => {
                     </p>
                 </div>
                 <div class="personDeatails">
-                    <div class='contactForm'>
-    
+                <div class='personInfo'>
+                    <img class='projectPerson'  alt="" />
+                    <p>
+                        this Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias explicabo saepe temporibus veniam illum provident magnam deleniti fuga dolorum! Fugit eius enim culpa necessitatibus.
+                    </p>
+                    </div>
+                <div class='contactForm'>
                         <form >
                         <p>Contact Form</p>
                             <input type="text"  placeholder='Name'/>
@@ -24,15 +29,9 @@ const ContactUs = () => {
                             <input type="email"  placeholder='Email'/>
                             <input type='Description'placeholder='Description'/>
                             <input class='submitBtn' type='submit'/>
-
                         </form>
                     </div>
-                    <div class='personInfo'>
-                    <img class='projectLogo' src={logo} alt="" />
-                    <p>
-                        this Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias explicabo saepe temporibus veniam illum provident magnam deleniti fuga dolorum! Fugit eius enim culpa necessitatibus.
-                    </p>
-                    </div>
+
                 </div>
             </div>
             <Footer></Footer>

@@ -24,7 +24,7 @@ const EventPage = () => {
     return (
         <>
             <NavBar />
-            <Event eveData={EventData[eventNumber].data} />
+            <Event eve={EventData[eventNumber]} />
             <div class="timeLine-planet">
                 <div class="timeLine-element"
                     style={{ top: `calc(${5 - eventNumber}*10%)` }}>
