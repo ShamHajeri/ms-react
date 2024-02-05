@@ -68,11 +68,7 @@
     animation: searchOpening 200ms ease-in-out 1 normal;
 }
 
-.mobileView {
-    width: 100%;
-    height: 100%;
 
-}
 
 .mobileViewElements {
     display: flex;
@@ -122,6 +118,7 @@ details {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(7px);
+    z-index: 2;
 }
 
 details>summary {
@@ -133,6 +130,7 @@ details>summary {
     height: auto;
     position: relative;
     left: 50%;
+    z-index: 2;
 }
 
 

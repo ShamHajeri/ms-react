@@ -42,7 +42,9 @@ const HomeTitle = (props) => {
                 <span class='mainTitle'>
                     <label class='mainHeading'>{data.mainHeading}</label><br />
                     <label class='subHeading'>{data.subHeading}</label><br /><br />
-                    <button class='mainBtn'>
+                    <button class='mainBtn' onClick={()=>{
+                        window.location.href="planet"
+                    }}>
                         {data.mainBtn}
                     </button>
                 </span>

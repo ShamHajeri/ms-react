@@ -12,9 +12,11 @@ const Event = ({eve}) => {
     const TLHTML = eveData.map((item, index) => <div class="TLName"
         onClick={() => {
             setEventNumber(index)
-        }}><span style={{
+        }}>
+            <span style={{
             opacity: `${eventNumber === index ? "100%" : "40%"}`
-        }}>{item.name}</span></div>);
+        }}>{item.name}</span>
+        </div>);
     return (<>
         <div class="ETB_event" style={{
             right: `${eveData[eventNumber].EIPosition}`

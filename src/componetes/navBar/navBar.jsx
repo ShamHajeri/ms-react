@@ -14,18 +14,13 @@ const NavBar = () => {
     const navigate = useNavigate(false);
 
     useLayoutEffect(() => {
-        // Function to update the window width
+   
         const updateWindowWidth = () => {
             SetScreenWidth(window.innerWidth);
             console.log(window.innerWidth)
         };
-
-        // Attach the event listener
         window.addEventListener('resize', updateWindowWidth);
-
-        // Call the update function once when the component mounts
         updateWindowWidth();
-
         return () => {
             window.removeEventListener('resize', updateWindowWidth);
         };
@@ -55,7 +50,7 @@ const NavBar = () => {
     }
 
     const mobileView = () => {
-        return (<>
+        return (<div class="mobileView">
             <div class="navBar">
                 <details>
                     <summary class={toggleMenu ? '' : 'change'} onClick={menuToggle} >
@@ -77,7 +72,7 @@ const NavBar = () => {
                 </div>
             </div>
 
-        </>
+        </div>
         )
     }
     const desktopView = () => {
@@ -104,7 +99,6 @@ const NavBar = () => {
 
     return (
         <div class="mainView">
-
             {screenWidth < 600 ? mobileView() : desktopView()}
         </div>
     )

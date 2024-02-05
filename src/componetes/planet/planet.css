@@ -30,7 +30,7 @@
       background-image: url(../../assert/dn.png);
       background-size: cover;
       position: absolute;
-      z-index: 1;
+      z-index: 3;
   
   
   }

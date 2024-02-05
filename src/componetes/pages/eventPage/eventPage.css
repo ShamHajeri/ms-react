@@ -7,15 +7,14 @@
     right: 50%;
     transform: width;
     transition-duration: 500ms;
-    z-index: 1;
+    z-index: 3;
 }
 .eventDiv{
     width: 400px;
     height: 300px;
     position: absolute;
     top: 50%;
-    margin-top: -100px;
-    z-index: 2;
+    z-index: 3;
     transform: left;
     transition-duration: 500ms;
    
@@ -41,7 +40,7 @@
     width: 200px;
     height: 900px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     right: 10%;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(255, 255, 255, .15) 51.97%, rgba(217, 217, 217, 0.00) 100%);
     backdrop-filter: blur(5px);
@@ -51,7 +50,7 @@
     width: 200px;
     height: 900px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     right: 0%;
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(255, 255, 255, .15) 51.97%, rgba(217, 217, 217, 0.00) 100%);
     backdrop-filter: blur(10px);
@@ -83,4 +82,115 @@
 }
 .TLName>p{
     padding:0px 0px 0px 20px;
+}
+
+
+/* ==================mobile========================= */
+.mobile_event{
+    width: 100%;
+    min-height: 370px;
+    max-height: 450px;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    bottom: 15%;
+    align-items: flex-start;
+    z-index: 3;
+
+}
+.TLNameMobile{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align:center;
+    cursor: pointer;
+
+}
+.TLNameMobile>span{
+    cursor: pointer;
+     margin: auto;
+     font-size: 1rem;
+}
+.TLNameMobile>p{
+height: 1px;
+}
+.timeLine-planet-mobile{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 3;
+    right: 0%;
+    bottom: 20%;
+
+
+}
+.timeLine-element-mobile{
+    width: inherit;
+    display: flex;
+    transition: all 900ms;
+
+}
+.descriptionBoxMobile{
+    width: 70%;
+    height: fit-content;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: 3rem;
+    color: white;
+
+}
+.timeLineMobile{
+    width: 100%;
+}
+.timeLine-elementMobile{
+    width: 90%;
+    height: auto;
+    display: flex;
+    padding-bottom: 5px;
+    margin: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: all 900ms;
+   /* -ms-overflow-style: none;  /* IE and Edge */
+  /*  scrollbar-width: none;  /* Firefox */
+}
+.timeLine-elementMobile::-webkit-scrollbar{
+    width: 0px;
+    height: 1px;
+}
+.ETB_event_Mobile{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+    transition: all 900ms;
+}
+.eventDivMobile{
+    margin: 0px auto;
+    margin-top: -100px;
+   
+    transform: left;
+    transition-duration: 500ms;
+   
+}
+.backgroundEffect{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    bottom: 0%;
+    z-index: 1;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+    background-image: linear-gradient(to bottom , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.423));
+
 }
