@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Api } from '../dataService.ts';
 import './search.css'
 import SearchWidget from './searchWidget';
@@ -7,11 +7,21 @@ const Search = ({ closeBtn }) => {
 
     const [state, setState] = useState({ input: "", result: [], isDom: false })
 
-    const getData = async (value) => {
+    useEffect(()=>{
+        console.log("hi")
+        const timeout = setTimeout(
+            async()=>{
+                console.log("hi")
+                const url = 'https://newsapi.org/v2/everything?q=' + state.input + '&pageSize=6&language=en';
+                const data = await Api.request(url, 'GET', '');
+                setState(prevState => { return { ...prevState, result: data } });
+                console.log("fine")
+            },2000)
+        return  ()=>clearTimeout(timeout)     
+    })
+
+    const getData = (value) => {
         setState(prevState => { return { ...prevState, input: value } });
-        const url = 'https://newsapi.org/v2/everything?q=' + `${value}` + '&pageSize=6&language=en';
-        const data = await Api.request(url, 'GET', '');
-        setState(prevState => { return { ...prevState, result: data } });
     }
     
 
