@@ -8,14 +8,11 @@ const Search = ({ closeBtn }) => {
     const [state, setState] = useState({ input: "", result: [], isDom: false })
 
     useEffect(()=>{
-        console.log("hi")
         const timeout = setTimeout(
             async()=>{
-                console.log("hi")
                 const url = 'https://newsapi.org/v2/everything?q=' + state.input + '&pageSize=6&language=en';
                 const data = await Api.request(url, 'GET', '');
                 setState(prevState => { return { ...prevState, result: data } });
-                console.log("fine")
             },2000)
         return  ()=>clearTimeout(timeout)     
     })
