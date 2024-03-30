@@ -13,7 +13,7 @@ const HomeTitle = (props) => {
             setBIPosition(data.nextBIPosition)
             setBISize(data.nextBISize)
         }
-        else{
+        else {
             setBIPosition(data.defualtBIPosition)
             setBISize(data.defualtBISize)
         }
@@ -21,29 +21,30 @@ const HomeTitle = (props) => {
     useEffect(() => {
         const handleScroll = () => {
             listenToScroll();
-          };
+        };
         window.addEventListener("scroll", handleScroll);
         return () =>
-        
-        window.removeEventListener("scroll", handleScroll);
+
+            window.removeEventListener("scroll", handleScroll);
     }, [listenToScroll])
 
 
     return (
         <>
             <div class="homeTitle" >
-                <div class="ETB_position" style={{ 
+                <div class="ETB_position" style={{
                     top: `${bIPosition}`
-                    ,right:`calc(100% -${bIPosition})`,
+                    , right: `calc(100% -${bIPosition})`,
                     width: `${bISize}`
-                    ,height:`${bISize}` }}>
-                <ETB  etb="moon"/>
+                    , height: `${bISize}`
+                }}>
+                    <ETB etb="moon" />
                 </div>
                 <span class='mainTitle'>
                     <label class='mainHeading'>{data.mainHeading}</label><br />
                     <label class='subHeading'>{data.subHeading}</label><br /><br />
-                    <button class='mainBtn' onClick={()=>{
-                        window.location.href="planet"
+                    <button class='mainBtn' onClick={() => {
+                        window.location.href = "planet"
                     }}>
                         {data.mainBtn}
                     </button>

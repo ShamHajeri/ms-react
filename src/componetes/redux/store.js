@@ -11,7 +11,7 @@ const persistConfig = {
   storage,
 };
 
-const storeReducer =combineReducers({articleReducer,reviewReducer})
+const storeReducer = combineReducers({ articleReducer, reviewReducer })
 
 const persistedReducer = persistReducer(persistConfig, storeReducer);
 

@@ -7,20 +7,20 @@ const Search = ({ closeBtn }) => {
 
     const [state, setState] = useState({ input: "", result: [], isDom: false })
 
-    useEffect(()=>{
+    useEffect(() => {
         const timeout = setTimeout(
-            async()=>{
+            async () => {
                 const url = 'https://newsapi.org/v2/everything?q=' + state.input + '&pageSize=6&language=en';
                 const data = await Api.request(url, 'GET', '');
                 setState(prevState => { return { ...prevState, result: data } });
-            },2000)
-        return  ()=>clearTimeout(timeout)     
+            }, 2000)
+        return () => clearTimeout(timeout)
     })
 
     const getData = (value) => {
         setState(prevState => { return { ...prevState, input: value } });
     }
-    
+
 
     const hideDom = () => {
         setState(prevState => { return { ...prevState, isDom: true } });
@@ -31,9 +31,9 @@ const Search = ({ closeBtn }) => {
         <div class="searchDom">
             <div class='searchWidget'>
                 <div class='search'>
-                    <input type="search" value={state.input} onChange={(e) => getData(e.target.value)} /> 
+                    <input type="search" value={state.input} onChange={(e) => getData(e.target.value)} />
                     <div class="closeBtn" onClick={hideDom} >
-                    <button class='mainBtn'>Close</button>
+                        <button class='mainBtn'>Close</button>
                     </div>
                 </div>
             </div>

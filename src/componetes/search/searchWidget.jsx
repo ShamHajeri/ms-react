@@ -4,12 +4,12 @@ import { updateArticle } from '../redux/articleSlice';
 
 const SearchWidget = (props) => {
     const data = props.data.articles;
-    const dispatch=useDispatch();
+    const dispatch = useDispatch();
     return (
         <>
             {Array.isArray(data) && data.map((item, index) => (
                 <div key={index} className='searchContent'>
-                    <span onClick={()=>{dispatch(updateArticle(item)); window.location.href='/dis';}}>{item.title}</span>
+                    <span onClick={() => { dispatch(updateArticle(item)); window.location.href = '/dis'; }}>{item.title}</span>
                 </div>
             ))}
         </>

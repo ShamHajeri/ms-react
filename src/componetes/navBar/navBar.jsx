@@ -14,7 +14,7 @@ const NavBar = () => {
     const navigate = useNavigate(false);
 
     useLayoutEffect(() => {
-   
+
         const updateWindowWidth = () => {
             SetScreenWidth(window.innerWidth);
             console.log(window.innerWidth)

@@ -4,19 +4,19 @@ import { useDispatch } from 'react-redux';
 import { updateReview } from '../../redux/reviewSlice.js';
 import ETB from '../../planet/planet.jsx';
 
-const Event = ({eve}) => {
-    const eveData=eve.data 
+const Event = ({ eve }) => {
+    const eveData = eve.data
     const [eventNumber, setEventNumber] = useState(2);
     const dispatch = useDispatch();
-       console.log(eveData)
+    console.log(eveData)
     const TLHTML = eveData.map((item, index) => <div class="TLName"
         onClick={() => {
             setEventNumber(index)
         }}>
-            <span style={{
+        <span style={{
             opacity: `${eventNumber === index ? "100%" : "40%"}`
         }}>{item.name}</span>
-        </div>);
+    </div>);
     return (<>
         <div class="ETB_event" style={{
             right: `${eveData[eventNumber].EIPosition}`

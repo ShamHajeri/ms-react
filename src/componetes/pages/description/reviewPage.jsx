@@ -6,14 +6,14 @@ import Footer from '../../footer/footer';
 
 const ReviewPage = () => {
 
-    const reivewData = useSelector((state)=>state.store.reviewReducer.review);
-     const PointDiv  = reivewData.points.map((item)=><p class="pointDiv"><h4>{item.pointName}</h4><br></br><span>{item.pointContent}</span></p>)
+    const reivewData = useSelector((state) => state.store.reviewReducer.review);
+    const PointDiv = reivewData.points.map((item) => <p class="pointDiv"><h4>{item.pointName}</h4><br></br><span>{item.pointContent}</span></p>)
     console.log(reivewData.points)
 
     return (reivewData ?
         <div class='description'>
             <NavBar />
-            <div class='mainDescription' style={{height:`60rem`}}>
+            <div class='mainDescription' style={{ height: `60rem` }}>
                 <div class='mainElement'>
                     <div class='imageAndOther'
                         style={{ backgroundImage: `url("${reivewData.url}")` }}
@@ -30,8 +30,8 @@ const ReviewPage = () => {
                 </div>
                 <div class='moreDetail'>
                     <span>{reivewData.description}</span>
-                     <br></br>
-                     {PointDiv}
+                    <br></br>
+                    {PointDiv}
                 </div>
             </div>
             <Footer />

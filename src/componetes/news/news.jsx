@@ -9,7 +9,7 @@ const News = (props) => {
     const data = props.newsData
     const dispatch = useDispatch()
     return (
-        <div class='newsWidgets' onClick={() => { dispatch(updateArticle(data)); window.location.href='/dis'; }}>
+        <div class='newsWidgets' onClick={() => { dispatch(updateArticle(data)); window.location.href = '/dis'; }}>
             <div class='newsElement' style={{ backgroundImage: `url("${data.urlToImage}")` }}>
                 <span class='newsTitle'>{data.title}</span>
             </div>

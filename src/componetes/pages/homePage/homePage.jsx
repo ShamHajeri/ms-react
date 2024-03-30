@@ -19,14 +19,14 @@ export class HomePages extends React.Component {
 
   async updateData() {
     try {
-    //  const data = await Api.request('', 'GET', '');
-     const data = ''
-      this.setState({ newsData: data?data:newsMockData });
+      //  const data = await Api.request('', 'GET', '');
+      const data = ''
+      this.setState({ newsData: data ? data : newsMockData });
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   }
-  async componentDidMount(){
+  async componentDidMount() {
     this.updateData()
   }
 
@@ -36,9 +36,9 @@ export class HomePages extends React.Component {
       <div className="mainScreen">
         <NavBar />
         <div class='container'>
-        <HomeTitle HomeTitleData={HomePage.HomeTitle} />
-        <NewsEvent NewsEventData={this.state.newsData} />
-        <SildeShow sildes={HomePage.SildesData} />
+          <HomeTitle HomeTitleData={HomePage.HomeTitle} />
+          <NewsEvent NewsEventData={this.state.newsData} />
+          <SildeShow sildes={HomePage.SildesData} />
         </div>
         <Footer />
       </div>

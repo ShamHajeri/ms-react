@@ -10,12 +10,12 @@ const Sildes = ({ sildeData }) => {
             <div class="sildeElement" >
                 <ETB etb={sildeData.url} />
             </div>
-           
-                <span class='sildeText'>
-                    <h4>{sildeData.heading}</h4>
-                    {sildeData.text}
-                </span>
-   
+
+            <span class='sildeText'>
+                <h4>{sildeData.heading}</h4>
+                {sildeData.text}
+            </span>
+
         </div>
     )
 }

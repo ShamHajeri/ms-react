@@ -22,9 +22,9 @@ const EventMobile = ({ eve }) => {
     return (
         <>
             <div className="ETB_event_Mobile" style={{
-                 left: `${eventNumber*15 -50}px`,
-                 width: `${eventNumber?eventNumber*170:120}px`
-                , height: `${eventNumber?eventNumber*170:120}px`
+                left: `${eventNumber * 15 - 50}px`,
+                width: `${eventNumber ? eventNumber * 170 : 120}px`
+                , height: `${eventNumber ? eventNumber * 170 : 120}px`
             }}>
                 <ETB etb={eve.name} />
             </div>
@@ -39,8 +39,8 @@ const EventMobile = ({ eve }) => {
                     </div>
                 </div>
                 <div className="timeLineMobile">
-                    <div className="timeLine-elementMobile" 
-                     >
+                    <div className="timeLine-elementMobile"
+                    >
                         {TLHTML}
                     </div>
                 </div>
