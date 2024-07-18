@@ -31,8 +31,7 @@
       background-size: cover;
       position: absolute;
       z-index: 3;
-  
-  
+      margin-left: 2px;
   }
   
   @keyframes planetrotation {
